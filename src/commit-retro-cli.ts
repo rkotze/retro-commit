@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-export function retro():String {
+export function retro():string {
   return "Retro looking at commits";
 }
 
