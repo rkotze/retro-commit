@@ -1,31 +1,26 @@
 {
-    "env": {
-        "node": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      {
+        "selector": "enumMember",
+        "format": ["UPPER_CASE"]
+      }
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "project": "./tsconfig.json"
-    },
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "rules": {
-        "@typescript-eslint/naming-convention": [
-            "warn",
-            {
-                "selector": "enumMember",
-                "format": ["UPPER_CASE"]
-            }
-            ],
-        "@typescript-eslint/semi": "warn",
-        "curly": "warn",
-        "eqeqeq": "warn",
-        "no-throw-literal": "warn",
-        "semi": "off"
-    }
+    "@typescript-eslint/semi": "warn",
+    "curly": "warn",
+    "eqeqeq": "warn",
+    "no-throw-literal": "warn",
+    "semi": "off"
+  }
 }
