@@ -1,4 +1,5 @@
 import titleLength from "../rules/title-length";
+import { Result } from "./result";
 
 const rules = [titleLength()];
 

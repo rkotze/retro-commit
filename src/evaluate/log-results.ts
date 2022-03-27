@@ -1,3 +1,5 @@
+import { Result } from "./result";
+
 export function logResults(results: Result[][]) {
   let hasError = false;
   for (const commitResults of results) {

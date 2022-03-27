@@ -1,4 +1,6 @@
-type Result = {
+import { Level } from "../rules/rule";
+
+export type Result = {
   commitHash: string;
   message: string;
   moduleName: string;
