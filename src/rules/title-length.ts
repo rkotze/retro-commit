@@ -1,4 +1,4 @@
-import { Level } from "./level";
+import { Rule, Level } from "./rule";
 
 export default function titleLength(): Rule {
   return {
@@ -6,7 +6,7 @@ export default function titleLength(): Rule {
     message:
       "Must have more than 10 or less than 80 characters in commit title",
     level: Level.ERROR,
-    action(commit) {
+    action(commit: Commit) {
       return commit.title.length > 10 && commit.title.length < 80;
     },
   };
